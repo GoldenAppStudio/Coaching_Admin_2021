@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="studio.goldenapp.coaching.admin">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".QuestionEdit"></activity>
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".QuizEdit" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".VideoListActivity" />
+        <activity android:name=".UploadBatchVideo" />
+        <activity android:name=".UploadBatchPdf" />
+        <activity android:name=".BatchActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudentProfileActivity" />
+        <activity android:name=".StudentListActivity" />
+        <activity android:name=".FsmActivity" />
+        <activity
+            android:name=".PdfActivity"
+            android:exported="true" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".BatchList" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:layout_gravity="top">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/upload_question_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="General Details"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/edit_notification_title_bar"
+                        android:textColor="#222"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/cancel_new_general_dialog"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_baseline_cancel_24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:typeface="sans"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#474B4F" />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:id="@+id/name_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:typeface="sans"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="#474B4F"
+                    />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:id="@+id/description_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:typeface="sans"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#474B4F"
+                    />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:id="@+id/address_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:typeface="sans"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#474B4F"
+                    />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:id="@+id/email_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:typeface="sans"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="#474B4F"
+                    />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:id="@+id/phone_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:typeface="sans"
+                    android:background="@drawable/gradient_main"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:id="@+id/upload_general_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Submit" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

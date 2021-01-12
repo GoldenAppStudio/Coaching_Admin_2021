@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Coaching-Admin-App-2020"
