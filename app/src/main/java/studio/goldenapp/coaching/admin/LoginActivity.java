@@ -18,17 +18,21 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import br.com.simplepass.loadingbutton.customViews.CircularProgressButton;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        if(!isNetworkAvailable(this)) {
-            Toast.makeText(this,"Connect to internet first", Toast.LENGTH_LONG).show();
-            finish(); //Calling this method to close this activity when internet is not available.
-            System.exit(0);
-        }
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
+//        if(!isNetworkAvailable(this)) {
+//            Toast.makeText(this,"Connect to internet first", Toast.LENGTH_LONG).show();
+//            finish(); //Calling this method to close this activity when internet is not available.
+//            System.exit(0);
+//        }
     }
 
     @Override
@@ -36,13 +40,17 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        getSupportActionBar().setTitle("Login Activity");
+
         EditText username = findViewById(R.id.username);
         EditText password = findViewById(R.id.password);
-        Button button = findViewById(R.id.submit_login);
+        CircularProgressButton button = findViewById(R.id.submit_login);
 
         button.setOnClickListener(view -> {
+            button.startAnimation();
             if(username.getText().toString().equals("") || password.getText().toString().equals("")) {
                 Toast.makeText(this, "Username and Password required!", Toast.LENGTH_SHORT).show();
+                button.revertAnimation();
             } else {
                 DatabaseReference db = FirebaseDatabase.getInstance().getReference("admin");
                 db.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -57,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                             finish();
                         } else {
                             Toast.makeText(LoginActivity.this, "Username or Password is wrong", Toast.LENGTH_SHORT).show();
+                            button.revertAnimation();
                         }
                     }
 

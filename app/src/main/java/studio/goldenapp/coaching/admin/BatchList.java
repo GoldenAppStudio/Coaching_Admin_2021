@@ -42,6 +42,7 @@ public class BatchList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_batch_list);
 
+        getSupportActionBar().setTitle("Batch List");
         DatabaseReference databaseReference;
         final List<BatchClass> list = new ArrayList<>();
         final RecyclerView recyclerView;

@@ -28,6 +28,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
 
+    ViewFlipper viewFlipper;
     private static final int SELECT_VIDEO = 1;
     private String selectedVideoPath;
 
@@ -87,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().setTitle("Admin Panel 2021");
 
         _myDialog = new Dialog(MainActivity.this);
         _myDialog.setContentView(R.layout.upload_video_popup);
@@ -115,6 +119,13 @@ public class MainActivity extends AppCompatActivity {
 
         upload_video_layout = _myDialog.findViewById(R.id.upload_video_layout);
         video_uploaded_success = _myDialog.findViewById(R.id.video_uploaded_success);
+
+        viewFlipper = findViewById(R.id.view_flipper);
+        viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
+        viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
+        viewFlipper.setAutoStart(true);
+        viewFlipper.setFlipInterval(3000);
+        viewFlipper.startFlipping();
 
         if (getIntent().getExtras() != null) {
             _myDialog.show();

@@ -57,6 +57,7 @@ public class FsmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fsm);
 
+        getSupportActionBar().setTitle("Free Study Material");
         FloatingActionButton fab = findViewById(R.id.upload_fsm_floating_button);
         DatabaseReference fsm_reference;
         List<Fsm> fsm_list = new ArrayList<>();

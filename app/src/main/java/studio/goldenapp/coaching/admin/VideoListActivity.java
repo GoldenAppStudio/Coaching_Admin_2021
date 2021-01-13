@@ -41,6 +41,7 @@ public class VideoListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_list);
 
+        getSupportActionBar().setTitle("Video List");
         DatabaseReference video_reference;
         List<Video> video_list = new ArrayList<>();
         RecyclerView video_recyclerview;

@@ -50,6 +50,7 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
+        getSupportActionBar().setTitle("Notification");
         DatabaseReference databaseReference;
         final List<Notification> list = new ArrayList<>();
         final RecyclerView recyclerView;

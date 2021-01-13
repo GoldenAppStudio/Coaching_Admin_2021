@@ -80,6 +80,7 @@ public class PdfActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
 
+        getSupportActionBar().setTitle("PDF List");
         DatabaseReference pdf_reference;
         List<Pdfs> pdf_list = new ArrayList<>();
         RecyclerView pdf_recyclerview;

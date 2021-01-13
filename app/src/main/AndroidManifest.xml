@@ -18,29 +18,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuestionEdit"></activity>
-        <activity android:name=".QuestionActivity" />
-        <activity android:name=".QuizEdit" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".VideoListActivity" />
-        <activity android:name=".UploadBatchVideo" />
-        <activity android:name=".UploadBatchPdf" />
-        <activity android:name=".BatchActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".QuestionEdit" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".QuizEdit" />
+        <activity android:name=".QuizActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".VideoListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".UploadBatchVideo" />
+        <activity android:name=".UploadBatchPdf" />
+        <activity android:name=".BatchActivity" />
+        <activity android:name=".LoginActivity">
+        </activity>
         <activity android:name=".StudentProfileActivity" />
-        <activity android:name=".StudentListActivity" />
-        <activity android:name=".FsmActivity" />
+        <activity android:name=".StudentListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".FsmActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".PdfActivity"
-            android:exported="true" />
-        <activity android:name=".NotificationActivity" />
-        <activity android:name=".BatchList" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NotificationActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BatchList"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -16,28 +16,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/anand_computer" />
+            android:src="@drawable/kindle" />
 
         <ImageView
             android:id="@+id/img2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/andand_school" />
+            android:src="@drawable/laptop" />
 
         <ImageView
             android:id="@+id/img3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/anand_computer" />
+            android:src="@drawable/img" />
 
         <ImageView
             android:id="@+id/img4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/anand_playground" />
+            android:src="@drawable/student" />
     </ViewFlipper>
 
     <Button
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_flipper"
         android:background="@drawable/action_bar"
-        android:text="Abc sr. sec school..first step towards success"
+        android:text="Coaching Institute ..first step towards success"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="15sp"

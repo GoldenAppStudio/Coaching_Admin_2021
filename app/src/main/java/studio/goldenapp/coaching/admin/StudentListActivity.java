@@ -41,6 +41,7 @@ public class StudentListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_list);
 
+        getSupportActionBar().setTitle("Student List");
         DatabaseReference student_reference;
         List<Student> student_list = new ArrayList<>();
         RecyclerView student_recyclerview;

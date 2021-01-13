@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient_main"
+    tools:context=".SplashScreen">
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:SpinKit_Color="#fff"
+        style="@style/SpinKitView.Large.Circle">
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coaching Institute Admin Panel"
+        android:textAlignment="center"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/spinner"
+        android:layout_marginVertical="50dp"/>
+
+
+</RelativeLayout>

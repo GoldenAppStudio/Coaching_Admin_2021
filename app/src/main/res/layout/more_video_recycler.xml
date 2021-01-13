@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:src="@drawable/anand_computer"
+                android:src="@drawable/kindle"
                 android:id="@+id/more_video_thumb_recycle"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
