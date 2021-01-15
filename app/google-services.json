@@ -1,87 +1,34 @@
 {
   "project_info": {
-    "project_number": "317561623844",
-    "firebase_url": "https://coaching-institute-project.firebaseio.com",
-    "project_id": "coaching-institute-project",
-    "storage_bucket": "coaching-institute-project.appspot.com"
+    "project_number": "389685001808",
+    "firebase_url": "https://the-question-hub-24bc0-default-rtdb.firebaseio.com",
+    "project_id": "the-question-hub-24bc0",
+    "storage_bucket": "the-question-hub-24bc0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:317561623844:android:a81a28699239f0cb9b4fb1",
-        "android_client_info": {
-          "package_name": "com.goldenappstudio.coachinginstitutes2020"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "317561623844-jnga9bgn9cpdhocoeo7cp1eu5m0qltr7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.goldenappstudio.coachinginstitutes2020",
-            "certificate_hash": "e44ce57ba057e221f6ccc3dce35966485f1b12cf"
-          }
-        },
-        {
-          "client_id": "317561623844-3d70dtmjr0jpj71rveqm8hiqi7q0couf.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.goldenappstudio.coachinginstitutes2020",
-            "certificate_hash": "efdcdda45201050a3ac5a571a8772d03ae0ebd24"
-          }
-        },
-        {
-          "client_id": "317561623844-46aldp451hrhpt9fifa4s0830c1altdl.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD04cQn_SOpYGmd-JJ4xZEHnvbkq9qn3Ic"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "317561623844-46aldp451hrhpt9fifa4s0830c1altdl.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:317561623844:android:d91b9159168124649b4fb1",
+        "mobilesdk_app_id": "1:389685001808:android:37bfe453f71c11f1031b55",
         "android_client_info": {
           "package_name": "studio.goldenapp.coaching.admin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "317561623844-4llue7e7fdfthbk6akmbu1djmv93fqh9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "studio.goldenapp.coaching.admin",
-            "certificate_hash": "e44ce57ba057e221f6ccc3dce35966485f1b12cf"
-          }
-        },
-        {
-          "client_id": "317561623844-46aldp451hrhpt9fifa4s0830c1altdl.apps.googleusercontent.com",
+          "client_id": "389685001808-3bq9jto3dbj0pdb0eh35c0ia2s92vlqm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD04cQn_SOpYGmd-JJ4xZEHnvbkq9qn3Ic"
+          "current_key": "AIzaSyBcE4jROC39BY3VMiAMKjVplzmxSGJpj2Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "317561623844-46aldp451hrhpt9fifa4s0830c1altdl.apps.googleusercontent.com",
+              "client_id": "389685001808-3bq9jto3dbj0pdb0eh35c0ia2s92vlqm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

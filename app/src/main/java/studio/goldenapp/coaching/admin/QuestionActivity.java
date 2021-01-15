@@ -55,7 +55,7 @@ public class QuestionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
-
+        getSupportActionBar().setTitle("Question List");
         FloatingActionButton fab = findViewById(R.id.add_question_floating_button);
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
         List<Question> questions = new ArrayList<>();

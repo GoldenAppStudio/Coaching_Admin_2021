@@ -313,7 +313,6 @@ class _MoreVideoRecycler extends RecyclerView.Adapter<_MoreVideoRecycler.ViewHol
 
         final _MoreVideo moreVideo = MainImageUploadInfoList.get(position);
 
-
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference gsReference = storage.getReferenceFromUrl("gs://coaching-institute-project.appspot.com/store/videos/" + moreVideo.getVideo_id() + ".mp4");
 

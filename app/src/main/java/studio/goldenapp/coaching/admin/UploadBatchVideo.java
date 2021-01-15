@@ -96,6 +96,9 @@ public class UploadBatchVideo extends AppCompatActivity {
 
         initialise_video_upload();
 
+        upload_video_button.setOnClickListener(view -> upload_video());
+
+
     }
 
     public void initialise_video_upload() {
@@ -171,6 +174,7 @@ public class UploadBatchVideo extends AppCompatActivity {
             video_teacher.setError("Video Teacher/s is required!");
         } else {
             upload_video_button.setVisibility(View.GONE);
+            Log.d("K1", "aaaa");
             _progressBar_layout.setVisibility(View.VISIBLE);
             start_video_upload();
         }
@@ -178,7 +182,7 @@ public class UploadBatchVideo extends AppCompatActivity {
 
     // Storage Permission is granted. Now video uploading can be started ...
     public void start_video_upload() {
-
+        Log.d("K2", "aaaa");
         DatabaseReference db = FirebaseDatabase.getInstance().getReference("batches/" + BatchActivity.this_batch_id + "/store/videos");
         String uniqueID = db.push().getKey();
 
